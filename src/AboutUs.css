@@ -1,0 +1,169 @@
+/* Centered Hero Card Container */
+.about-image-card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px; /* top distance */
+}
+
+/* Hero Card */
+.about-image-card {
+  position: relative;
+  height: 400px;
+  width: 400px; /* increased size */
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect on the card */
+.about-image-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+}
+
+/* Card Image */
+.about-image {
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+/* Hover effect on image */
+.about-image-card:hover .about-image {
+  transform: scale(1.05);
+}
+
+/* Overlay Text on Image (normal text, no dark blur) */
+.about-image-overlay {
+  position: absolute;
+  bottom: 20px; /* distance from bottom */
+  left: 20px;   /* padding from left */
+  right: 20px;  /* padding from right */
+  text-align: center;
+  font-weight: 100px;
+  color: #421308; /* bright text color */
+}
+
+.about-image-overlay h1 {
+  font-size: 32px;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.about-image-overlay p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Cards Section */
+.cards-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.modern-card {
+  background: linear-gradient(135deg, #fff7f0, #ffe0d4);
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.modern-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.center-card {
+  max-width: 320px;
+  background: linear-gradient(135deg, #ffe0d4, #ffbfa0);
+}
+
+.card-icon {
+  font-size: 50px;
+  color: #ff7f50;
+  margin-bottom: 15px;
+}
+
+.modern-card h3 {
+  font-size: 22px;
+  color: #ff7f50;
+  margin-bottom: 10px;
+}
+
+.modern-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Team Section (unchanged) */
+.team-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 36px;
+  color: #ff7f50;
+  margin-bottom: 40px;
+}
+
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5%;
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #ff7f50;
+}
+
+.team-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.team-social a {
+  font-size: 18px;
+  color: #ff7f50;
+  margin: 0 5px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.team-social a:hover {
+  color: #ff4c1f;
+  transform: scale(1.2);
+}

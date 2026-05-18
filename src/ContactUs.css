@@ -1,0 +1,133 @@
+/* Page Container */
+.contact-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+/* Contact Card */
+.contact-card {
+  width: 400px;
+  background: linear-gradient(135deg, #fff7f0, #ffe0d4);
+  padding: 30px 25px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.contact-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+/* Title */
+.contact-card h2 {
+  font-size: 30px;
+  color: #ff7f50;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.contact-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd; /* light border */
+  outline: none;
+  background: #ffffff; /* ✅ pure white */
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Focus Effect (nice orange glow) */
+.contact-card input:focus,
+.contact-card textarea:focus {
+  border: 1px solid #ff7f50;
+  box-shadow: 0 0 8px rgba(255,127,80,0.4);
+}
+
+/* Textarea Resize */
+.contact-card textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Send Button */
+.contact-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff7f50, #ff5722);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Button Hover */
+.contact-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Disabled Button */
+.contact-card button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Status Message */
+.form-status {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Social Section */
+.contact-social {
+  margin-top: 20px;
+}
+
+.contact-social span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Icons */
+.social-icons a {
+  font-size: 20px;
+  color: #ff7f50;
+  margin: 0 8px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+/* Hover Icons */
+.social-icons a:hover {
+  color: #ff4c1f;
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media(max-width: 500px) {
+  .contact-card {
+    width: 100%;
+  }
+}

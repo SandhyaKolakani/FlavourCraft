@@ -1,0 +1,115 @@
+/* Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* ✅ vertical center */
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+/* Card */
+.login-card {
+  width: 350px;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #fff7f0, #ffe0d4);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+}
+
+/* Title */
+.login-card h2 {
+  color: #ff7f50;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  color: #0c0704;
+  border: 1px solid #ddd;
+  background: #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Input focus effect */
+.login-card input:focus {
+  border-color: #ff7f50;
+  box-shadow: 0 0 8px rgba(255,127,80,0.4);
+}
+
+/* Button */
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff7f50, #ff5722);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Toggle text */
+.toggle-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.toggle-text span {
+  color: #ff7f50;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toggle-text span:hover {
+  text-decoration: underline;
+}
+
+/* Status Message */
+.status {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Navbar Username */
+.user-name {
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* Fingerprint Button */
+.fingerprint-btn {
+ 
+  color: #ffffff;
+  padding: 8px 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.fingerprint-btn:hover {
+  color: #0c0704;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255,127,80,0.6); /* 🔥 glow */
+}

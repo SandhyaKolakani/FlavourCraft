@@ -1,0 +1,63 @@
+/* -------------------- Global Layout -------------------- */
+
+/* Add spacing at top so content is not under Navbar */
+
+
+/* -------------------- Route Container -------------------- */
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* -------------------- Card Hover (for Home or Category Cards) -------------------- */
+
+.card-hover {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  background-color: #ffe5b4;
+}
+
+.card-hover img {
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-hover:hover img {
+  transform: scale(1.05);
+}
+
+/* -------------------- General Typography -------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* -------------------- Footer or Extra Sections -------------------- */
+
+footer {
+  background-color: #d35400;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* -------------------- Responsive Tweaks -------------------- */
+
+@media (max-width: 768px) {
+  .card-hover img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  body {
+    padding-top: 60px;
+  }
+}

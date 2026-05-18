@@ -1,0 +1,181 @@
+body {
+   background:#f4f6f9;
+    font-family:Arial; 
+  }
+
+.recipe-wrapper {
+   width:90%;
+   margin:auto;
+   padding:40px; 
+  }
+
+.recipe-title {
+  text-align:center; 
+  font-size:36px; 
+  font-weight:700; 
+  margin-bottom:30px; 
+  color:#333; 
+  letter-spacing:1px; 
+}
+
+.recipe-container {
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:12px;
+}
+
+.card {
+  background:white;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  text-align:center;
+  width:100%;
+  padding:15px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  transition: all 0.4s ease; 
+  overflow:hidden; 
+}
+
+.card.ingredients, .card.preparation { 
+  opacity:0; 
+  transform: translateY(50px); 
+}
+.card.ingredients.show-left, .card.preparation.show-right { 
+  opacity:1; transform: 
+  translateY(0); 
+}
+
+/* Image card */
+.image-card img { 
+  width:100%; 
+  height:auto; 
+  border-radius:10px; 
+  transition: all 0.4s ease;
+  object-fit:cover;
+  margin-bottom:40px; 
+}
+.image-card img:hover { transform:scale(1.05); }
+
+/* Spice buttons */
+.spice-level { 
+  margin-top:0; 
+  display:flex; 
+  justify-content:center; 
+  gap:8px; 
+}
+.spice-level button { 
+  padding:5px 12px; 
+  border:none; 
+  border-radius:8px; 
+  background:#e5e5e5; 
+  color:#333; 
+  font-weight:600; 
+  cursor:pointer; 
+}
+.spice-level .active { 
+  background:#ff4d4d; 
+  color:white; 
+}
+
+/* Lists */
+.ingredients ul, .preparation ol { 
+  margin:0; 
+  padding-left:15px; 
+  text-align:left; 
+}
+.ingredients li, .preparation li { 
+  margin-bottom:5px; 
+}
+
+/* Actions */
+.actions { 
+  display:flex; 
+  justify-content:center; 
+  gap:20px; margin-top:20px; 
+}
+.icon { 
+  width:28px; 
+  height:28px; 
+  stroke:#333; 
+  stroke-width:2; 
+  fill:none; 
+}
+.liked { 
+  fill:red; 
+  stroke:red; 
+}
+.saved { 
+  fill:#ffcc00; 
+  stroke:#ffcc00; 
+}
+
+/* Comments */
+.comment-section { 
+  margin-top:15px; 
+}
+.comment-section form { 
+  display:flex; 
+  justify-content:center; 
+  gap:8px; 
+}
+.comment-section input { 
+  width:250px; 
+  padding:6px 8px; 
+  border-radius:6px; 
+  border:1px solid #ccc; 
+  outline:none; 
+  font-size:14px; 
+}
+.comment-section button { 
+  padding:6px 12px; 
+  border:none; 
+  background:#ff6b6b; 
+  color:white; 
+  border-radius:6px; 
+  cursor:pointer; 
+}
+.comments p { 
+  background:#f1f1f1;
+  padding:6px; 
+  border-radius:6px; 
+  margin-top:6px; 
+}
+
+/* ================= BACK TO HOME BUTTON ================= */
+
+.button-wrapper {
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.back-home-btn {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow:
+    0 6px 12px rgba(0, 0, 0, 0.2),
+    0 0 6px rgba(238, 9, 121, 0.4);
+}
+
+.back-home-btn:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 12px 24px rgba(0,0,0,0.25),
+    0 0 12px rgba(238,9,121,0.5);
+  background: linear-gradient(135deg, #ee0979, #ff6a00); /* subtle hover change */
+}
+.saved {
+  fill: red;
+  stroke: red;
+}

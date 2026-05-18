@@ -1,0 +1,306 @@
+/* ---------------- Intro Section ---------------- */
+
+.intro {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Video Background */
+
+.intro-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  filter: blur(5px);
+  transform: scale(1.05);
+
+  z-index: 1;
+}
+
+/* Dark Overlay */
+
+.intro::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 2;
+}
+
+/* Intro Content */
+
+.intro-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  color: rgb(251, 142, 18);
+
+  z-index: 3;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.intro-content h1 {
+  font-weight: 700;
+  font-size: 50px;
+
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.intro-content p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+
+  margin: 20px 0;
+
+  text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+}
+
+/* Button */
+
+.intro-btn {
+  padding: 14px 35px;
+
+  border: none;
+
+  background: white;
+  color: #ff7f50;
+
+  font-size: 18px;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.intro-btn:hover {
+  background: #ffd1b4;
+  transform: scale(1.05);
+}
+
+/* ---------------- Footer ---------------- */
+
+.footer {
+  position: relative;
+  z-index: 5;
+
+  background-color: #111;
+  color: #fff;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Footer Top */
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 50px 20px;
+
+  gap: 40px;
+}
+
+/* Footer Logo */
+
+.footer-logo-desc h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+
+  margin-bottom: 15px;
+}
+
+.footer-logo-desc p {
+  font-weight: 400;
+  font-size: 14px;
+
+  color: #ccc;
+
+  max-width: 250px;
+}
+
+/* Footer Headings */
+
+.footer-links-section h3,
+.footer-connect-app h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+
+  margin-bottom: 15px;
+}
+
+/* Footer Links */
+
+.footer-links-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+
+  transition: color 0.3s;
+}
+
+.footer-links-section ul li a:hover {
+  color: #ff7f50;
+}
+
+/* App Store Icons */
+
+.footer-connect-app .app-links {
+  display: flex;
+  justify-content: center;
+
+  gap: 20px;
+
+  margin-top: 10px;
+}
+
+.app-icon {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff;
+
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.app-icon img {
+  width: 36px;
+  height: auto;
+}
+
+.app-icon:hover {
+  transform: scale(1.2);
+
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+/* Footer Bottom */
+
+.footer-social-bottom {
+  text-align: center;
+
+  padding: 30px 20px;
+
+  border-top: 1px solid #222;
+}
+
+.footer-social-bottom h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+
+  margin-bottom: 15px;
+}
+
+.footer-social-bottom a {
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-social-bottom a:hover {
+  transform: scale(1.2);
+}
+
+.footer-social-bottom p {
+  margin-top: 0.5rem;
+
+  font-size: 0.9rem;
+
+  color: #aaa;
+}
+
+/* Social Icon Colors */
+
+.footer-social-bottom a:nth-child(1):hover {
+  color: #25D366;
+}
+
+.footer-social-bottom a:nth-child(2):hover {
+  color: #1877F2;
+}
+
+.footer-social-bottom a:nth-child(3):hover {
+  color: #1DA1F2;
+}
+
+.footer-social-bottom a:nth-child(4):hover {
+  color: #E1306C;
+}
+
+.footer-social-bottom a:nth-child(5):hover {
+  color: #FF0000;
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media(max-width: 992px) {
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media(max-width: 576px) {
+
+  .intro-content h1 {
+    font-size: 40px;
+  }
+
+  .intro-content p {
+    font-size: 16px;
+  }
+
+  .intro-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  .app-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .app-icon img {
+    width: 28px;
+  }
+
+  .footer-social-bottom a {
+    font-size: 1.5rem;
+  }
+}
