@@ -10,7 +10,7 @@
 /* Video Background */
 
 .intro-video {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 
@@ -29,7 +29,7 @@
 
 .intro::after {
   content: "";
-  position: absolute;
+  position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.35);
   z-index: 2;
